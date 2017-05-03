@@ -14,6 +14,6 @@ public class BallScript : MonoBehaviour {
 
     void OnCollisionEnter (){
         Rigidbody rigidbody = GetComponent<Rigidbody> ();
-        rigidbody.velocity = rigidbody.velocity.normalized * 15;
+        rigidbody.velocity = rigidbody.velocity * 15;
     }
 }
